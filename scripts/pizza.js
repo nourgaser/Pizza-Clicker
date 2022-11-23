@@ -8,7 +8,9 @@ pizza.addEventListener("click", (e) => {
     currImage = 1;
     num.innerHTML = ++NumOfSllices;
   } else currImage++;
-  if (window.location.href.split("/").at(-1) !== "index.html")
+
+  let t = window.location.href.split("/").at(-1);
+  if (t !== "index.html" && t !== "Pizza-Clicker")
     pizza.src = `../img/${currImage}.svg`;
   else pizza.src = `./img/${currImage}.svg`;
 });
