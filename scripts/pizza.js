@@ -10,7 +10,7 @@ pizza.addEventListener("click", (e) => {
   } else currImage++;
 
   let t = window.location.href.split("/").at(-1);
-  if (t !== "index.html" && t !== "Pizza-Clicker")
+  if (t !== "index.html" && t  !== "Pizza-Clicker" && t !== "")
     pizza.src = `../img/${currImage}.svg`;
   else pizza.src = `./img/${currImage}.svg`;
 });
