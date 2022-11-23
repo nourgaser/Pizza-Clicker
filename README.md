@@ -7,8 +7,9 @@ This is a small drawing of a pizza in which can be eaten by clicking
 
 EAT ME!! Pizza  YAAAY  --  \ ^ ^ / 
 
-
 ## Updated
+
+This is a small drawing of a pizza in which can be eaten by clicking 
 
 Turned into a mini Project for Collage. Course Internet Technologies (IS 402). Which is:
 
