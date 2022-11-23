@@ -69,7 +69,7 @@ h1 {
 }
 
 h1::before {
-  content: url("/img/raihana.svg");
+  content: url("../img/raihana.svg");
   position: absolute;
   left: 10px;
   transform: scaleX(-1);
@@ -110,7 +110,7 @@ header ul {
 .banner {
   gap: 5em;
   color: white;
-  background: url("/img/homepage_banner_bg.png");
+  background: url("../img/homepage_banner_bg.png");
   background-size: cover;
   height: 597px;
 }
@@ -141,7 +141,7 @@ footer {
 }
 
 footer::after {
-  content: url("/img/raihana.svg");
+  content: url("../img/raihana.svg");
   position: absolute;
   right: 0;
   bottom: 0;
