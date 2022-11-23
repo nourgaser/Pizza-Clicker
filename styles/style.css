@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=IM+Fell+French+Canon&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: #fff;
+  color: #000;
+}
+
+body {
+  font-size: 1.4rem;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body,
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+audio,
+footer,
+header,
+nav,
+section,
+video {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "IM Fell French Canon", serif;
+}
+
+.title {
+  font-family: "Amatic SC", cursive;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+  margin-left: 55px;
+  font-weight: 400;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+h1::before {
+  content: url("/img/raihana.svg");
+  position: absolute;
+  left: 0;
+  transform: scaleX(-1);
+}
+
+p {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+img {
+  border: none;
+  max-width: 100%;
+}
+
+header {
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  height: 60px;
+  width: 25vw;
+  border-radius: 0 0 0 30px;
+}
+header ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1em;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.68);
+}
+
+.banner {
+  gap: 5em;
+
+  color: white;
+  background: url("/img/homepage_banner_bg.png");
+  height: 597px;
+}
+
+.banner-logo {
+  animation-name: slow-spin;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 1em 3em;
+}
+
+footer::after {
+  content: url("/img/raihana.svg");
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+footer .container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo {
+  height: 200px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.social {
+  gap: 50px;
+}
+
+.social-icon::before {
+  font-size: 24px;
+}
+
+.social-icon:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.social-icon:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pizza-clicker {
+  height: 100px;
+}
+
+.pizza-clicker:hover {
+  transform: scale(1.1);
+}
+
+.pizza-clicker-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.selected-page {
+  font-weight: 700;
+}

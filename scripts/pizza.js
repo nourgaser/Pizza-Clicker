@@ -9,7 +9,7 @@ pizza.addEventListener("click", (e) => {
         currImage = 1;
         num.innerHTML=++NumOfSllices;
     } else currImage++;
-    pizza.src= `./img/${currImage}.svg`;
+    pizza.src= `/img/${currImage}.svg`;
 })
 
 
