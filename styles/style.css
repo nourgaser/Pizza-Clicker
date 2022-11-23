@@ -9,6 +9,8 @@ body {
   min-height: 100%;
   background: #fff;
   color: #000;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -59,7 +61,7 @@ h4 {
 
 h1 {
   font-size: 32px;
-  margin-left: 55px;
+  margin-left: 25px;
   font-weight: 400;
   height: 56px;
   display: flex;
@@ -69,7 +71,7 @@ h1 {
 h1::before {
   content: url("/img/raihana.svg");
   position: absolute;
-  left: 0;
+  left: 10px;
   transform: scaleX(-1);
 }
 
@@ -92,8 +94,9 @@ header {
   background-color: #fff;
   right: 0;
   height: 60px;
-  width: 25vw;
   border-radius: 0 0 0 30px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.68);
+  padding: 1em;
 }
 header ul {
   width: 100%;
@@ -102,14 +105,13 @@ header ul {
   gap: 1em;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.68);
 }
 
 .banner {
   gap: 5em;
-
   color: white;
   background: url("/img/homepage_banner_bg.png");
+  background-size: cover;
   height: 597px;
 }
 
@@ -189,6 +191,11 @@ footer .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+footer .container {
+  width: 33.33333%;
 }
 
 .flex-center {
@@ -197,7 +204,63 @@ footer .logo {
   align-items: center;
 }
 
-
 .selected-page {
   font-weight: 700;
+}
+
+.copyright {
+  align-self: flex-end;
+}
+
+section {
+  padding: 0 1.5em;
+}
+
+.back-to-top {
+  width: 100vw;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-to-top h1 {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .banner .title {
+    display: none;
+  }
+  .banner-logo {
+    padding: 20px;
+  }
+  footer .container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    height: auto;
+  }
+  header {
+    width: 100vw;
+    border-radius: 0;
+    padding: 0.5em;
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .vspacer {
+    display: none;
+  }
+  
 }
