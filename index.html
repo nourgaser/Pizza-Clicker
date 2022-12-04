@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/all.min.css" />
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <title>Puzzle Pizza</title>
   </head>
   <body>
@@ -24,15 +25,14 @@
       <p class="title">Pizza</p>
     </section>
     <section class="section1">
-      <div class="container">
-        <h1>Some title</h1>
+      <div class="container center">
+        <h1>IN CRUST WE TRUST.</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-          neque possimus repellat? Reiciendis, tempora obcaecati! Id tempore
-          autem eligendi soluta consectetur. Fugit assumenda explicabo porro
-          doloremque qui, numquam ex temporibus quae officiis adipisci. Saepe,
-          enim cumque magni deleniti itaque vitae mollitia ad magnam earum
-          delectus, illo animi unde quod dignissimos!
+          Puzzle Pizza serves slow proved Neapolitan pizza in our pizzerias, at
+          events across the UK and in Pizza in the Post. All of our dough is
+          made fresh, daily, sourcing the best ingredients Italy has to offer in
+          order to bring you the best possible pizza base going. As any
+          Neapolitan will tell you – it’s all about the crust.
         </p>
       </div>
       <div class="container">
@@ -46,15 +46,30 @@
     </section>
     <section class="section3">
       <div class="container flex-center">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/vcfNpDtVqOw"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <video
+          id="my-video"
+          class="video-js"
+          width="640"
+          height="300"
+          controls
+          preload="auto"
+          data-setup="{}"
+          muted
+          autoplay
+        >
+          <source
+            src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BGQt5ro6Wj942f6n0/videoblocks-close-up-of-different-kinds-of-pizza-italian-food-pizza-on-the-wooden-plate-full-of-vegetables-cheese-spices-well-baked-dish-series-of-shots-about-pizza-appetizing-sauce_btl7-b4mm__a156b8666bbd2ca35f0506d4dbe4817f__P360.mp4"
+            type="video/mp4"
+          />
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading
+            to a web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+        <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
       </div>
       <div class="container">
         <h1>Some title</h1>

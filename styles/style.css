@@ -16,6 +16,7 @@ body {
 body {
   font-size: 1.4rem;
   text-rendering: optimizeLegibility;
+  background-image: url('../img/bg-pattern.png');
 }
 
 a,
@@ -226,6 +227,10 @@ section {
 }
 .back-to-top h1 {
   margin-left: 0;
+}
+
+.center {
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
