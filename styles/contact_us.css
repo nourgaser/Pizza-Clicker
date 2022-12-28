@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.contact-us button {
+  overflow: visible;
+}
+
+.contact-us button,
+.contact-us select {
+  text-transform: none;
+}
+
+.contact-us button,
+.contact-us input,
+.contact-us select,
+.contact-us textarea {
+  color: #5a5a5a;
+  font: inherit;
+  margin: 0;
+}
+
+.contact-us input {
+  line-height: normal;
+}
+
+.contact-us textarea {
+  overflow: auto;
+}
+
+.contact-us #container {
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+.contact-us form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.contact-us h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+.contact-us .container h1::before {
+    content: none;
+}
+
+.contact-us .underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.contact-us .icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.contact-us .icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.contact-us .email {
+  float: right;
+  width: 45%;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us select,
+.contact-us textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-us input[type="text"]:focus,
+.contact-us input[type="email"]:focus,
+.contact-us textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.contact-us .message {
+  float: none;
+}
+
+.contact-us .name {
+  float: left;
+  width: 45%;
+}
+
+.contact-us select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.contact-us select::-ms-expand {
+  display: none;
+}
+
+.contact-us .subject {
+  width: 100%;
+}
+
+.contact-us .telephone {
+  width: 100%;
+}
+
+.contact-us textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+.contact-us ::-webkit-input-placeholder {
+  color: #474544;
+}
+
+.contact-us :-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+.contact-us ::-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+.contact-us :-ms-input-placeholder {
+  color: #474544;
+}
+
+.contact-us #form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-us #form_button:hover {
+  background: #474544;
+  color: #f2f3eb;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us h1 {
+    font-size: 26px;
+  }
+
+  .contact-us .underline {
+    width: 68px;
+  }
+
+  .contact-us #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact-us h1 {
+    font-size: 18px;
+  }
+
+  .contact-us .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .contact-us .underline {
+    width: 53px;
+  }
+
+  .contact-us input[type="text"],
+  .contact-us input[type="email"],
+  .contact-us select,
+  .contact-us textarea {
+    font-size: 0.875em;
+  }
+}

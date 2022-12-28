@@ -16,7 +16,7 @@ body {
 body {
   font-size: 1.4rem;
   text-rendering: optimizeLegibility;
-  background-image: url('../img/bg-pattern.png');
+  background-image: url("../img/bg-pattern.png");
 }
 
 a,
@@ -98,6 +98,7 @@ header {
   border-radius: 0 0 0 30px;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.68);
   padding: 1em;
+  z-index: 100;
 }
 header ul {
   width: 100%;
@@ -233,6 +234,102 @@ section {
   text-align: center;
 }
 
+/* TEST */
+.border {
+  border-radius: 10px;
+  border: 3px solid #d9d9d9;
+}
+
+.social-embed-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container1 p {
+  width: 50%;
+}
+
+.container1 img {
+  max-height: 300px;
+  /* width: 40%; */
+}
+
+/* .gallary-image { */
+/* width: 20%; */
+/* height: 20%; */
+/* } */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.location .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.gallary-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+.gallary-images img {
+  border-radius: 10px;
+  border: 3px solid #d9d9d9;
+  transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 1;
+}
+
+.gallary-images img:hover {
+  transform: scale(1.4);
+  z-index: 10;
+}
+
+.dib-homepage-title::before {
+  content: none;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
 @media only screen and (max-width: 900px) {
   .banner .title {
     display: none;
@@ -261,88 +358,15 @@ section {
     padding: 0.5em;
     position: static;
   }
+
+  .gallary-images img:hover {
+    transform: scale(1.2);
+    z-index: 10;
+  }
 }
 
 @media only screen and (max-width: 350px) {
   .vspacer {
     display: none;
-  }
-  
-}
-
-
-
-/* TEST */
-.container {
-  margin: 1em 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1em;
-  padding: 1em 2em;
-}
-
-section {
-  /* padding: 0; */
-}
-
-.border {
-  border-radius: 10px;
-  border: 3px solid #D9D9D9;
-}
-
-.container1 p {
-  width: 50%;
-}
-
-.container1 img {
-  max-height: 300px;
-  /* width: 40%; */
-}
-
-@media only screen and (max-width: 900px) {
-  .about_us .container1 p {
-      width: auto;
-  }
-}
-
-/* .gallary-image { */
-  /* width: 20%; */
-  /* height: 20%; */
-/* } */
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
   }
 }

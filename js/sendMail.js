@@ -1,8 +1,8 @@
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const topic = document.getElementById("topic");
-const message = document.getElementById("message");
+const name = document.getElementById("name_input");
+const email = document.getElementById("email_input");
+const phone = document.getElementById("telephone_input");
+const topic = document.getElementById("subject_input");
+const message = document.getElementById("message_input");
 
 function sendEmail() {
   const nameVal = name.value;
@@ -26,7 +26,7 @@ function sendEmail() {
       "Content-Type": "application/json",
       "Accept": "application/json",
       "api-key":
-        "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",
+        "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",
     },
     body: JSON.stringify({
       sender: {
