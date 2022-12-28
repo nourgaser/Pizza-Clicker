@@ -16,6 +16,21 @@ Turned into a mini Project for Collage. Course Internet Technologies (IS 402). W
 A Front-End desgin for a mini pizza resturant.
 The Pizza-Clicker is still There in the footer.
 
+
+## Technologies used
+- Figma for UI design and vector art.
+- HTML, CSS, JS for the core of the website.
+- Various social media platform embed features.
+- Shortform and longform multimedia on SoundCloud, YouTube, and others.
+- Git/GitHub for version control and collaboration.
+- GitHub Pages for static hosting.
+- GoDaddy for DNS.
+- SendInBlue SMTP API for contact form.
+- DropInBlog API for blogs feature.
+- Facebook Apps API for authenticated comments feature.
+- Bulk image compression through ImageMagick CLI tool.
+- LaTeX + Beamer for the documentation and presentation.
+
 ## Team Members
 | Name        | ID           |
 | ------------- |:-------------:|
