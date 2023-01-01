@@ -26,7 +26,7 @@ function sendEmail() {
       "Content-Type": "application/json",
       "Accept": "application/json",
       "api-key":
-        "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",
+        "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",
     },
     body: JSON.stringify({
       sender: {
